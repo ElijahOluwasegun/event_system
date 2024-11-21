@@ -22,12 +22,20 @@ h1 {
 
 .input-group {
     background-color: rgb(179, 179, 179);
-    padding: 15px;
+    padding: 25px 20px;
 }
+
 
 .outside-input-group {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(179, 179, 179);
+    /* background-color: rgb(255, 175, 71); */
+}
+
+.outside-input-group2 {
+    display: flex;
+    justify-content: center;
     background-color: rgb(179, 179, 179);
     /* background-color: rgb(255, 175, 71); */
 }
@@ -56,6 +64,11 @@ label {
 .wide_text {
     width: 200px;
     height: 30px;
+}
+
+.wider_text {
+    width: 500px;
+    height: 100px;
 }
 
 .btn {
