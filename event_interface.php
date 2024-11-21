@@ -14,11 +14,11 @@
     <div class="outside-input-group">
         <div class="input-group">
             <label for="">Event Number:</label>
-            <input type="text" name="Eventno" required>
+            <input type="text" name="Eventno" placeholder="EV999" required>
         </div>
         <div class="input-group">
             <label for="">Event Name:</label>
-            <input type="text" name="EventName" required>
+            <input class="wide_text" type="text" name="EventName" required>
         </div>
         <div class="input-group">
             <label for="">Event Description: </label>
@@ -60,13 +60,13 @@
         </div>
         <div class="input-group">
             <label for="">Organizers Email:</label>
-            <input type="email" name="Organizeremail" required>
+            <input type="email" name="Organizeremail" placeholder="eventplanner@gmail.com" required>
         </div>
     </div>
     <div class="outside-input-group">
         <div class="input-group">
             <label for="">Organizers Phone Number:</label>
-            <input type="text" name="Organizerphoneno" required>
+            <input type="text" name="Organizerphoneno" placeholder="+256999999999" required>
         </div>
         <div class="input-group">
             <label for="">Attendee Size:</label>
@@ -79,10 +79,10 @@
             </select>
         </div>
     </div>
-    <div class="outside-input-group">
-        <div class="input-group">
+    <div class="outside-input-group2">
+        <div class="input-group2">
             <label for="">Additional Comments:</label>
-            <input type="text" name="AdditionalComments">
+            <input class="wider_text" type="text" name="AdditionalComments">
         </div>
     </div>
     <div class="outside-input-group">

@@ -13,25 +13,25 @@
     <div class="outside-input-group">
         <div class="input-group">
             <label for="">Attendee no:</label>
-            <input type="text" name="Attno" required>
+            <input type="text" name="Attno" placeholder="ATT999" required>
         </div>
         <div class="input-group">
             <label for="">First Name:</label>
-            <input class="wide_text" type="text" name="AttFname" required>
+            <input class="wide_text" type="text" name="AttFname" placeholder="John" required>
         </div>
         <div class="input-group">
             <label for="">Last Name:</label>
-            <input class="wide_text" type="text" name="AttLname" required>
+            <input class="wide_text" type="text" name="AttLname" placeholder="Doe" required>
         </div>
     </div>
     <div class="outside-input-group">
         <div class="input-group">
             <label for="">Email: </label>
-            <input type="email" name="Attemail" required>
+            <input type="email" name="Attemail" placeholder="johndoe@gmail.com" required>
         </div>
         <div class="input-group">
             <label for="">Phone Number:</label>
-            <input type="text" name="Attphoneno" required>
+            <input type="text" name="Attphoneno" placeholder="+256999999999" required>
         </div>
         <div class="input-group">
                 <label for="">Event No:</label>

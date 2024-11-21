@@ -14,7 +14,7 @@
         <div class="outside-input-group">
             <div class="input-group">
                 <label for="">Room no:</label>
-                <input type="text" name="Roomno" required>
+                <input type="text" name="Roomno" placeholder="R999" required>
             </div>
             <div class="input-group">
                 <label for="">Room Name:</label>
