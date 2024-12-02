@@ -31,7 +31,7 @@
         </div>
         <div class="input-group">
             <label for="">Phone Number:</label>
-            <input type="text" name="Attphoneno" placeholder="+256999999999" required>
+            <input type="text" name="Attphoneno" placeholder="+999999999999" required>
         </div>
         <div class="input-group">
                 <label for="">Event No:</label>

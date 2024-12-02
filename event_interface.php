@@ -66,7 +66,7 @@
     <div class="outside-input-group">
         <div class="input-group">
             <label for="">Organizers Phone Number:</label>
-            <input type="text" name="Organizerphoneno" placeholder="+256999999999" required>
+            <input type="text" name="Organizerphoneno" placeholder="+999999999999" required>
         </div>
         <div class="input-group">
             <label for="">Attendee Size:</label>
