@@ -111,9 +111,9 @@ if (isset($_POST['Save']))
         </div>
     </div>
     <div class="links">
-        <a href="">View Staff</a>
-        <a href="">Update Staff</a>
-        <a href="">Delete Staff</a>
+        <a href="ViewStaff.php">View Staff</a>
+        <a href="UpdateStaff.php">Update Staff</a>
+        <a href="DeleteStaff.php">Delete Staff</a>
     </div>
 </body>
 </html>
