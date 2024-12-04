@@ -52,5 +52,8 @@
             </div>
         </div>
     </form>
+    <div class="links">
+        <a href="ViewStaff.php">View Staff</a>
+    </div>
 </body>
 </html>
