@@ -59,7 +59,7 @@ if (isset($_POST['Save']))
             justify-content: center;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: #47820D;
+            background-color: rgba(102, 51, 0, 0.75);
         }
         
         p {
@@ -75,28 +75,10 @@ if (isset($_POST['Save']))
         }
 
         a {
-            background-color: blue;
+            background-color: rgba(255, 207, 140, 1);
             border: 1px solid none;
             border-radius: 5px;
-            padding: 20px 10px
-        }
-
-        a:nth-child(1) {
-            background-color: orange;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-        }
-
-        a:nth-child(2) {
-            background-color: green;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-        }
-
-        a:nth-child(3) {
-            background-color: red;
+            padding: 20px 10px;
             font-weight: bold;
             text-decoration: none;
             color: white;
@@ -112,8 +94,6 @@ if (isset($_POST['Save']))
     </div>
     <div class="links">
         <a href="ViewStaff.php">View Staff</a>
-        <a href="UpdateStaff.php">Update Staff</a>
-        <a href="DeleteStaff.php">Delete Staff</a>
     </div>
 </body>
 </html>
