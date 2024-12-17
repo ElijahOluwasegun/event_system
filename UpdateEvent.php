@@ -101,51 +101,51 @@ if (isset($_GET['id'])) {
                 </div>
                 <div class="input-group">
                     <label for="">Event Description:</label>
-                    <input type="text" class="wide_text" name="Edescript" value="<?= htmlspecialchars($event['Edescript']) ?>" required>
+                    <input type="text" class="wide_text" name="Edescript" value="<?= htmlspecialchars($event['Edescript']) ?>" >
                 </div>
             </div>
         </div>
             <div class="outside-input-group">
                 <div class="input-group">
                     <label for="">Event Start Date:</label>
-                    <input type="date" name="EventStartDate" value="<?= htmlspecialchars($event['EventStartDate']) ?>" min="2024-10-01" max="2025-05-01" required>
+                    <input type="date" name="EventStartDate" value="<?= htmlspecialchars($event['EventStartDate']) ?>" min="2024-10-01" max="2025-05-01" >
                 </div>
                 <div class="input-group">
                     <label for="">Event End Date:</label>
-                    <input type="date" name="EventEndDate" value="<?= htmlspecialchars($event['EventEndDate']) ?>"  min="2024-10-01" max="2025-05-01" required>
+                    <input type="date" name="EventEndDate" value="<?= htmlspecialchars($event['EventEndDate']) ?>"  min="2024-10-01" max="2025-05-01" >
                 </div>
                 <div class="outside-input-group">
                     <div class="input-group">
                         <label for="">Event Start Time:</label>
-                        <input type="time" name="EventStartTime" value="<?= htmlspecialchars($event['EventStartTime']) ?>"  required>
+                        <input type="time" name="EventStartTime" value="<?= htmlspecialchars($event['EventStartTime']) ?>"  >
                     </div>
                     <div class="input-group">
                         <label for="">Event End Time:</label>
-                        <input type="time" name="EventEndTime" value="<?= htmlspecialchars($event['EventEndTime']) ?>" max=1800 required>
+                        <input type="time" name="EventEndTime" value="<?= htmlspecialchars($event['EventEndTime']) ?>" max=1800 >
                     </div>
                 </div>
                 <div class="outside-input-group">
                     <div class="input-group">
                         <label for="">Host Organization:</label>
-                        <input type="text" name="HostOrg" value="<?= htmlspecialchars($event['HostOrg']) ?>" required>
+                        <input type="text" name="HostOrg" value="<?= htmlspecialchars($event['HostOrg']) ?>" >
                     </div>
                     <div class="input-group">
                         <label for="">Event Organizer:</label>
-                        <input type="text" name="EventOrg" value="<?= htmlspecialchars($event['EventOrg']) ?>" required>
+                        <input type="text" name="EventOrg" value="<?= htmlspecialchars($event['EventOrg']) ?>" >
                     </div>
                     <div class="input-group">
                         <label for="">Organizers Email:</label>
-                        <input type="email" name="Organizeremail" value="<?= htmlspecialchars($event['Organizeremail']) ?>" required>
+                        <input type="email" name="Organizeremail" value="<?= htmlspecialchars($event['Organizeremail']) ?>" >
                     </div>
                 </div>
                 <div class="outside-input-group">
                     <div class="input-group">
                         <label for="">Organizers Phone Number:</label>
-                        <input type="text" name="Organizerphoneno" value="<?= htmlspecialchars($event['Organizerphoneno']) ?>" required>
+                        <input type="text" name="Organizerphoneno" value="<?= htmlspecialchars($event['Organizerphoneno']) ?>" >
                     </div>
                 <div class="input-group">
                     <label for="">Attendee Size:</label>
-                    <select name="Attsize" id="" value="<?= htmlspecialchars($event['Attsize']) ?>" required>
+                    <select name="Attsize" id="" value="<?= htmlspecialchars($event['Attsize']) ?>" >
                             <option value="">==== Select ====</option>
                             <option value="small" <?= $event['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-20</option>
                             <option value="medium" <?= $staff['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-50</option>
@@ -157,7 +157,7 @@ if (isset($_GET['id'])) {
             <div class="outside-input-group">
             <div class="input-group">
             <label for="">Created By:</label>
-                <select name="Created_by" required>
+                <select name="Created_by">
                     <option value="">==== Select Event ====</option>
                     <?php
                     // Fetch staff members from the database
