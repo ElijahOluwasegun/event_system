@@ -88,25 +88,36 @@ if (isset($_GET['id'])) {
             <div class="outside-input-group">
                 <div class="input-group">
                     <label for="">Staff No:</label>
-                    <input type="text" name="Staffno" value="<?= htmlspecialchars($room['Staffno']) ?>" placeholder="+256999999999">
+                    <select name="Staffno" id="" value="<?= htmlspecialchars($room['Staffno']) ?>">
+                        <option value="">==== Select ====</option>
+                        <?php
+                        // Fetch staff members from the database
+                        include("configurations/connect.php");
+                        $stmt = $conn->query("SELECT id, Stno, Fname, Lname FROM staff");
+                        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<option value='{$row['id']}'>{$row['Stno']} {$row['Fname']} {$row['Lname']}</option>";
+                        }
+                        ?>
+                    </select>
                 </div>
                 <div class="input-group">
-                    <label for="">Email:</label>
-                    <input type="email" class="wide_text" name="email" value="<?= htmlspecialchars($room['email']) ?>" placeholder="johndoe@gmail.com">
-                </div>
-                <div class="input-group">
-                    <label for="">Cadre:</label>
-                    <select name="Cadre" id="" value="<?= htmlspecialchars($staff['Cadre']) ?>">
-                            <option value="">==== Select ====</option>
-                            <option value="Admin" <?= $staff['Cadre'] == 'Admin' ? 'selected' : '' ?>>System Administrator</option>
-                            <option value="Manager" <?= $staff['Cadre'] == 'Manager' ? 'selected' : '' ?>>Manager</option>
-                            <option value="Waiter" <?= $staff['Cadre'] == 'Waiter' ? 'selected' : '' ?>>Waiter</option>
-                        </select>
+                <label for="">Event No:</label>
+                    <select name="Eventno" id="" value="<?= htmlspecialchars($room['Eventno']) ?>">
+                        <option value="">==== Select ====</option>
+                        <?php
+                        // Fetch staff members from the database
+                        include("configurations/connect.php");
+                        $stmt = $conn->query("SELECT id, Eventno, EventName FROM event");
+                        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<option value='{$row['id']}'>{$row['Eventno']} {$row['EventName']}</option>";
+                    }
+                    ?>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="btn">
-            <button type="submit">Update Staff</button>
+            <button type="submit">Update Room</button>
         </div>
     </form>
 </body>

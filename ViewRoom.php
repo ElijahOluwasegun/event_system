@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch data from the rooms table
-$sql = "SELECT id, Roomno, Rname, Rlocation, Staffno, Eventno, Cadre FROM room";
+$sql = "SELECT id, Roomno, Rname, Rlocation, Staffno, Eventno FROM room";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $rooms = $stmt->fetchAll(PDO::FETCH_ASSOC);
