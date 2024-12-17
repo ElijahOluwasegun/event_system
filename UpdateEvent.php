@@ -154,6 +154,21 @@ if (isset($_GET['id'])) {
                         </select>
                 </div>
             </div>
+            <div class="outside-input-group">
+            <div class="input-group">
+            <label for="">Created By:</label>
+                <select name="Created_by" required>
+                    <option value="">==== Select Event ====</option>
+                    <?php
+                    // Fetch staff members from the database
+                    include("configurations/connect.php");
+                    $stmt = $conn->query("SELECT id, Eventno, EventName FROM event");
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo "<option value='{$row['id']}'>{$row['Eventno']} {$row['EventName']}</option>";
+                    }
+                    ?>
+                </select>
+            </div>
         </div>
         <div class="btn">
             <button type="submit">Update Event</button>
