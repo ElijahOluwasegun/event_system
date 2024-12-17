@@ -75,30 +75,30 @@ if (isset($_GET['id'])) {
             <div class="outside-input-group">
                 <div class="input-group">
                     <label class="staffn" for="">Staff Number:</label>
-                    <input type="text" name="Stno" value="<?= htmlspecialchars($book['Stno']) ?>" placeholder="ST999">
+                    <input type="text" name="Stno" value="<?= htmlspecialchars($staff['Stno']) ?>" placeholder="ST999">
                 </div>
                 <div class="input-group">
                     <label for="">First Name:</label>
-                    <input type="text" class="wide_text" name="Fname" value="<?= htmlspecialchars($book['Fname']) ?>" placeholder="John">
+                    <input type="text" class="wide_text" name="Fname" value="<?= htmlspecialchars($staff['Fname']) ?>" placeholder="John">
                 </div>
                 <div class="input-group">
                     <label for="">Last Name:</label>
-                    <input type="text" class="wide_text" name="Lname" value="<?= htmlspecialchars($book['Lname']) ?>" placeholder="Doe">
+                    <input type="text" class="wide_text" name="Lname" value="<?= htmlspecialchars($staff['Lname']) ?>" placeholder="Doe">
                 </div>
             </div>
         </div>
             <div class="outside-input-group">
                 <div class="input-group">
                     <label for="">Phone Number:</label>
-                    <input type="text" name="Phoneno" value="<?= htmlspecialchars($book['Phoneno']) ?>" placeholder="+256999999999">
+                    <input type="text" name="Phoneno" value="<?= htmlspecialchars($staff['Phoneno']) ?>" placeholder="+256999999999">
                 </div>
                 <div class="input-group">
                     <label for="">Email:</label>
-                    <input type="email" class="wide_text" name="email" value="<?= htmlspecialchars($book['email']) ?>" placeholder="johndoe@gmail.com">
+                    <input type="email" class="wide_text" name="email" value="<?= htmlspecialchars($staff['email']) ?>" placeholder="johndoe@gmail.com">
                 </div>
                 <div class="input-group">
                     <label for="">Cadre:</label>
-                    <select name="Cadre" id="" value="<?= htmlspecialchars($book['Cadre']) ?>">
+                    <select name="Cadre" id="" value="<?= htmlspecialchars($staff['Cadre']) ?>">
                             <option value="">==== Select ====</option>
                             <option value="Admin" <?= $staff['Cadre'] == 'Admin' ? 'selected' : '' ?>>System Administrator</option>
                             <option value="Manager" <?= $staff['Cadre'] == 'Manager' ? 'selected' : '' ?>>Manager</option>
@@ -108,7 +108,7 @@ if (isset($_GET['id'])) {
             </div>
         </div>
         <div class="btn">
-            <button type="submit">Update Book</button>
+            <button type="submit">Update Staff</button>
         </div>
     </form>
 </body>

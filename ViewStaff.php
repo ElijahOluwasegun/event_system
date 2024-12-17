@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch data from the books table
+// Fetch data from the staffs table
 $sql = "SELECT id, Stno, Fname, Lname, Phoneno, email, Cadre FROM staff";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
@@ -26,13 +26,20 @@ $staffs = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Staff List</title>
     <style>
         /* Basic styling */
-        table { width: 80%; margin: auto; border-collapse: collapse; }
-        th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: center; }
-        th { background-color: #f4f4f4; }
+        *{ box-sizing: border-box; margin: 0;   padding: 0; }
+        table { display: flex; justify-content: center; margin: 2em 0em; width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px 12px; border: 1px solid black; text-align: center; }
+        th { color: white; background-color: rgba(102, 51, 0, 0.75); }
+        .header { display: flex; justify-content: center; align-items: center; padding: 1em 0em; background-color: rgba(102, 51, 0, 0.75); color: rgb(255, 255, 255);}
+        h1 { font-family: "Inter", sans-serif;font-optical-sizing: auto; font-weight:700; font-style: normal;}
+        td { background-color: rgba(255, 207, 140, 1)}
+        td:hover {
+            background-color: white;
+        }
     </style>
 </head>
 <body>
-    <h2 style="text-align: center;">Staff List</h2>
+    <h1 class="header" style="text-align: center;">Staff List</h1>
     <table>
         <tr>
             <th>Staff ID</th>
@@ -56,7 +63,7 @@ $staffs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <td>
                     <a href="staff_interface.php?id=<?= htmlspecialchars($staff['id']) ?>">Add</a> |
                     <a href="UpdateStaff.php?id=<?= htmlspecialchars($staff['id']) ?>">Update</a> |
-                    <a href="DeleteStaff.php?id=<?= htmlspecialchars($staff['id']) ?>" onclick="return confirm('Are you sure you want to delete this book?');">Delete</a>
+                    <a href="DeleteStaff.php?id=<?= htmlspecialchars($staff['id']) ?>" onclick="return confirm('Are you sure you want to delete this staff?');">Delete</a>
                 </td>
             </tr>
         <?php endforeach; ?>

@@ -5,13 +5,13 @@ include("configurations/connect.php");
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Delete the book with the specified ID
+    // Delete the staff with the specified ID
     try {
         $stmt = $conn->prepare("DELETE FROM staff WHERE id = :id");
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         
         if ($stmt->execute()) {
-            // Redirect back to the books list with a success message
+            // Redirect back to the staffs list with a success message
             header("Location: ViewStaff.php?message=Staff deleted successfully");
             exit();
         } else {
