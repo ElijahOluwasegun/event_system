@@ -73,15 +73,15 @@ if (isset($_GET['id'])) {
             <div class="outside-input-group">
                 <div class="input-group">
                     <label for="">Room Number:</label>
-                    <input type="text" name="Roomno" value="<?= htmlspecialchars($room['Roomno']) ?>" placeholder="R999" required>
+                    <input type="text" name="Roomno" value="<?= htmlspecialchars($room['Roomno']) ?>" placeholder="R999">
                 </div>
                 <div class="input-group">
                     <label for="">Room Name:</label>
-                    <input type="text"  name="Rname" value="<?= htmlspecialchars($room['Rname']) ?>" required>
+                    <input type="text"  name="Rname" value="<?= htmlspecialchars($room['Rname']) ?>">
                 </div>
                 <div class="input-group">
                     <label for="">Location:</label>
-                    <input type="text"  name="Rlocation" value="<?= htmlspecialchars($room['Rlocation']) ?>" required>
+                    <input type="text"  name="Rlocation" value="<?= htmlspecialchars($room['Rlocation']) ?>">
                 </div>
             </div>
         </div>
