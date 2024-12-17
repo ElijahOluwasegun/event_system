@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Staff</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/newstyle.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Oriya:wght@400..700&display=swap" rel="stylesheet">
@@ -47,13 +47,16 @@
                     </select>
                 </div>
             </div>
-            <div class="btn">
-                <button type="submit" name="Save">Submit</button>
+            <div class="outside-buttons">
+                <div class="btn">
+                    <button type="submit" name="Save">Submit</button>
+                </div>
+                <div class="links">
+                    <a href="ViewStaff.php">View Staff</a>
+                </div>
             </div>
         </div>
     </form>
-    <div class="links">
-        <a href="ViewStaff.php">View Staff</a>
-    </div>
+    
 </body>
 </html>
