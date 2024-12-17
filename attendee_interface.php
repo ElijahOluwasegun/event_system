@@ -12,7 +12,7 @@
     <form action="InsertAttendee.php" method="post">
     <div class="outside-input-group">
         <div class="input-group">
-            <label for="">Attendee no:</label>
+            <label for="">Attendee No:</label>
             <input type="text" name="Attno" placeholder="ATT999" required>
         </div>
         <div class="input-group">
@@ -48,9 +48,14 @@
                     </select>
         </div>
     </div>
-    <div class="btn">
-        <button type="submit" name="Save">Submit</button>
-    </div>
+    <div class="outside-buttons">
+                <div class="btn">
+                    <button type="submit" name="Save">Submit</button>
+                </div>
+                <div class="links">
+                    <a href="ViewAttendee.php">View Attendee</a>
+                </div>
+            </div>
     </form>
 </body>
 </html>
