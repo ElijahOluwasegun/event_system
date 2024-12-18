@@ -114,6 +114,7 @@ if (isset($_GET['id'])) {
                     <label for="">Event End Date:</label>
                     <input type="date" name="EventEndDate" value="<?= htmlspecialchars($event['EventEndDate']) ?>"  min="2024-10-01" max="2025-05-01" >
                 </div>
+            </div>
                 <div class="outside-input-group">
                     <div class="input-group">
                         <label for="">Event Start Time:</label>
@@ -152,6 +153,12 @@ if (isset($_GET['id'])) {
                             <option value="large" <?= $event['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-100</option>
                             <option value="large" <?= $event['largest'] == 'largest' ? 'selected' : '' ?>>100+</option>
                         </select>
+                </div>
+                <div class="outside-input-group">
+                    <div class="input-group">
+                        <label for="">Additional Comments:</label>
+                        <input type="text" class="wider_text" name="AdditionalComments" value="<?= htmlspecialchars($event['AdditionalComments']) ?>">
+                    </div>
                 </div>
             </div>
             <div class="outside-input-group">
