@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch data from the books table
+// Fetch data from the events table
 $sql = "SELECT id, Eventno, EventName, Edescript, EventStartDate, EventEndDate, EventStartTime, HostOrg, EventOrg, Organizeremail, Organizerphoneno, Attsize, AdditionalComments, Created_by FROM event";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
@@ -78,7 +78,7 @@ $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <td>
                     <a href="event_interface.php?id=<?= htmlspecialchars($event['id']) ?>">Add</a> |
                     <a href="UpdateEvent.php?id=<?= htmlspecialchars($event['id']) ?>">Update</a> |
-                    <a href="DeleteEvent.php?id=<?= htmlspecialchars($event['id']) ?>" onclick="return confirm('Are you sure you want to delete this book?');">Delete</a>
+                    <a href="DeleteEvent.php?id=<?= htmlspecialchars($event['id']) ?>" onclick="return confirm('Are you sure you want to delete this event?');">Delete</a>
                 </td>
             </tr>
         <?php endforeach; ?>

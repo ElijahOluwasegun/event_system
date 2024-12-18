@@ -38,7 +38,7 @@
                     <select name="Eventno" required>
                         <option value="">==== Select Event ====</option>
                         <?php
-                        // Fetch staff members from the database
+                        // Fetch event members from the database
                         include("configurations/connect.php");
                         $stmt = $conn->query("SELECT id, Eventno, EventName FROM event");
                         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

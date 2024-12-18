@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
         die("Error: " . $e->getMessage());
     }
 
-    // Handle form submission for updating the staff
+    // Handle form submission for updating the event
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the new values or retain old ones if fields are empty
         $Evno = !empty($_POST['Eventno']) ? $_POST['Eventno'] : $event['Eventno'];
@@ -148,9 +148,9 @@ if (isset($_GET['id'])) {
                     <select name="Attsize" id="" value="<?= htmlspecialchars($event['Attsize']) ?>" >
                             <option value="">==== Select ====</option>
                             <option value="small" <?= $event['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-20</option>
-                            <option value="medium" <?= $staff['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-50</option>
-                            <option value="large" <?= $staff['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-100</option>
-                            <option value="large" <?= $staff['largest'] == 'largest' ? 'selected' : '' ?>>100+</option>
+                            <option value="medium" <?= $event['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-50</option>
+                            <option value="large" <?= $event['Attsize'] == 'Attsize' ? 'selected' : '' ?>>1-100</option>
+                            <option value="large" <?= $event['largest'] == 'largest' ? 'selected' : '' ?>>100+</option>
                         </select>
                 </div>
             </div>
@@ -160,7 +160,7 @@ if (isset($_GET['id'])) {
                 <select name="Created_by">
                     <option value="">==== Select Event ====</option>
                     <?php
-                    // Fetch staff members from the database
+                    // Fetch event number from the database
                     include("configurations/connect.php");
                     $stmt = $conn->query("SELECT id, Eventno, EventName FROM event");
                     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
