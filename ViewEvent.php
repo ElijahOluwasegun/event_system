@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch data from the events table
-$sql = "SELECT id, Eventno, EventName, Edescript, EventStartDate, EventEndDate, EventStartTime, HostOrg, EventOrg, Organizeremail, Organizerphoneno, Attsize, AdditionalComments, Created_by FROM event";
+$sql = "SELECT id, Eventno, EventName, Edescript, EventStartDate, EventEndDate, EventStartTime, EventEndTime,HostOrg, EventOrg, Organizeremail, Organizerphoneno, Attsize, AdditionalComments, Created_by FROM event";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -27,7 +27,7 @@ $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <style>
         /* Basic styling */
         *{ box-sizing: border-box; margin: 0;   padding: 0; }
-        table { display: flex; justify-content: center; margin: 2em 0em; width: 100%; border-collapse: collapse; }
+        table { display: flex; justify-content: left; margin: 2em 0em; width: 10%; border-collapse: collapse; }
         th, td { padding: 8px 12px; border: 1px solid black; text-align: center; }
         th { color: white; background-color: rgba(102, 51, 0, 0.75); }
         .header { display: flex; justify-content: center; align-items: center; padding: 1em 0em; background-color: rgba(102, 51, 0, 0.75); color: rgb(255, 255, 255);}
@@ -55,6 +55,7 @@ $events = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <th>Organizers Email</th>
             <th>Organizers Phone Number</th>
             <th>Attendee Size</th>
+            <th>Additional Comments</th>
             <th>Created By</th>
             <th>Actions</th>
         </tr>
