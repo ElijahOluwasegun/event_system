@@ -47,8 +47,11 @@ This project aims to design and develop an Event System Management application f
 ### Applicability:
 
 The ESM is applicable to hotels that host events of varying scales. It helps:
+
 • Simplify complex event planning processes.
+
 • Enhance guest satisfaction by delivering well-organized events.
+
 • Improve revenue by optimizing venue and resource utilization.
 
 ### Primary Users:
@@ -95,7 +98,7 @@ The Event System Management (ESM) for hotels is typically built using a three-ti
 
 The Frontend is the user interface (UI) that hotel staff interact with. It is designed to provide a seamless user experience while communicating with the backend.
 
-**Key Components:**
+**<ins>Key Components:</ins>**
 
 • **Web Interface:** Built using HTML and CSS to create responsive, interactive designs.
 
@@ -115,7 +118,7 @@ The Frontend is the user interface (UI) that hotel staff interact with. It is de
 
 The Backend handles the business logic, processes requests from the frontend, and interacts with the database. It acts as the brain of the system, ensuring smooth operations.
 
-**Key Components:**
+**<ins>Key Components:</ins>**
 
 • **Application Server:** Built with backend languages like PHP
 
@@ -129,7 +132,7 @@ The Backend handles the business logic, processes requests from the frontend, an
 
 The Database stores and manages all data related to the system. This includes user information and event details.
 
-**Key Components:**
+**<ins>Key Components:</ins>**
 
 • **Database Management System (DBMS):**
 
@@ -165,11 +168,11 @@ The Database stores and manages all data related to the system. This includes us
 ![Desktop - version](./images/frontend_imp_ui.png)
 ![Desktop - version](./images/frontend_imp_ui2.png)
 
-Input field - where you input the details of the event
+_Input field_ - where you input the details of the event
 
-Submit button - where you submit the details you have entered about the event
+_Submit button_ - where you submit the details you have entered about the event
 
-View Event button - where you view event details from the database
+_View Event button_ - where you view event details from the database
 
 ### Backend Implementation
 
