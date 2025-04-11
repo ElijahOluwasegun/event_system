@@ -56,9 +56,9 @@ Improve revenue by optimizing venue and resource utilization.
 
 ### Hardware Components Used
 
-| Component | Model     | Purpose |
-| --------- | --------- | ------- | ---------------------- |
-| Router    | Cisco A21 |         | For Internet Provision |
+| Component | Model     | Purpose                |
+| --------- | --------- | ---------------------- |
+| Router    | Cisco A21 | For Internet Provision |
 | Laptop    |
 
 ### Software Components Used
