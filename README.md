@@ -4,7 +4,7 @@ An Event System Management (ESM) for hotels integrates event management, staff a
 
 ## Table of contents
 
-- [Project Overview](#overview)
+- [Project Overview](#project-overview)
   - [Title](#title)
   - [Objective](#objective)
   - [Applicability](#applicability)
