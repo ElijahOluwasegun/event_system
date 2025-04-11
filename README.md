@@ -62,3 +62,10 @@ Improve revenue by optimizing venue and resource utilization.
 | Laptop    |
 
 ### Software Components Used
+
+| Component | Version | Purpose                 |
+| --------- | ------- | ----------------------- |
+| VSCode    | 4.8     | Development Environment |
+| Lamp      |         | Web server              |
+| Github    |         | For version history     |
+| Figma     |         | User-interface Design   |
