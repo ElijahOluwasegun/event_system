@@ -27,13 +27,6 @@ This project aims to design and develop an Event System Management application f
 - Facilitating CRUD operations on staff, events, rooms, and attendees.
 - Establishing and managing database relationships.
 - Enabling event scheduling and resource allocation.
-  A. Creating tables and records
-  B. Establishing relationships
-  C. Connecting to the database in Xampp through user input
-  D. Capturing event details
-  E. Assigning events to staff
-  F. Assigning attendees to events
-  G. Performing CRUD operations on all tables
 
 ### Applicability:
 
